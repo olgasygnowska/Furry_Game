@@ -5,6 +5,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    color: white;
 }
 
 section#score {
@@ -18,34 +20,33 @@ section#score {
 }
 
 #board  > div {    
-  border: 1px solid black;
+  border: 3px solid #3D405B;
+  border-radius: 10px;
+  background-color: #81B29A;
   float: left;
   width: 64px;
   height: 64px;
 }
 
-
 section#score div {
-  width: 10em;
-  height: 3em;
+  width: 15em;
+  height: 5em;
   text-align: center;
   padding: 0.5em;
-  background-color: rgba(211,211,211, 0.75);
-  border: 1px solid lightgray;
-  border-radius: 1px;
-  box-shadow: 1px 1px 5px 1px lightgray;
+  background-color: #3D405B;
+  border: 10px solid #E07A5F;
+  border-radius: 25px;
+  box-shadow: #F4F1DE;
   margin: 1em auto;
 }
 
 
-
-
-.furry {
+#board > div.furry {
   background-image: url('../images/furry.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.coin {
+#board > div.coin {
   background-image: url('../images/coin.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +60,7 @@ section#over {
   top: 0;
   z-index: 1;
   padding: 10px;
-  background-color: rgba(255, 255, 0, 0.75);
+  background-color: #E07A5F
 }
 
 section#over pre {
@@ -68,7 +69,7 @@ section#over pre {
   text-align: center;
   font-size: 10px;
   font-weight: bolder;
-  color: brown;
+  color: #81B29A;
 }
 
 .invisible {
